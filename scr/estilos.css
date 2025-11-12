@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.seccion {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#listaArtistas {
+    margin-top: 10px;
+}
+
+.artista-item {
+    margin-bottom: 5px;
+}
+
+.artista-item input {
+    margin-right: 5px;
+}
+
+#resultados {
+    margin-top: 10px;
+}
+
+.cancion {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s;
+}
+
+.cancion:hover {
+    background-color: #f0f0f0;
+}
+
+.album {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.album-titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.arbol-navegacion {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    max-width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.arbol-navegacion h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#contenidoArbol {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.ruta-lineal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.elemento-ruta {
+    color: #666;
+    padding: 2px 5px;
+}
+
+.elemento-ruta.activo {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.separador-ruta {
+    color: #999;
+    margin: 0 3px;
+}
+
+.reproductor-actual {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 2px solid #0066cc;
+    border-radius: 8px;
+    padding: 20px 40px;
+    min-width: 300px;
+    text-align: center;
+    display: none;
+    z-index: 1000;
+}
+
+.cancion-actual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.nombre-cancion-actual {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.info-cancion-actual {
+    font-size: 14px;
+    color: #666;
+}
