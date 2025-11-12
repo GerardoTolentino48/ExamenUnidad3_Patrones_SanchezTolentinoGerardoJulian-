@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 3</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Reproductor de Música</h1>
+        
+        <div class="seccion">
+            <h2>Seleccionar Género</h2>
+            <select id="selectorGenero">
+                <option value="">-- Selecciona un género --</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+                <option value="electronica">Electrónica</option>
+                <option value="clasica">Clásica</option>
+            </select>
+        </div>
+
+        <div class="seccion">
+            <h2>Filtros Adicionales</h2>
+            <div>
+                <label for="selectorIdioma">Idioma:</label>
+                <select id="selectorIdioma">
+                    <option value="">Todos los idiomas</option>
+                    <option value="espanol">Español</option>
+                    <option value="ingles">Inglés</option>
+                </select>
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="selectorDecada">Década:</label>
+                <select id="selectorDecada">
+                    <option value="">Todas las décadas</option>
+                    <option value="70s">70s</option>
+                    <option value="80s">80s</option>
+                    <option value="90s">90s</option>
+                    <option value="2000">2000 en adelante</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <h2>Seleccionar Artistas</h2>
+            <div id="listaArtistas"></div>
+        </div>
+
+        <div class="seccion">
+            <h2>Seleccionar Álbumes</h2>
+            <div id="listaAlbumes"></div>
+        </div>
+
+        <div class="seccion">
+            <button id="btnMostrarCanciones">Mostrar Canciones</button>
+        </div>
+
+        <div class="seccion">
+            <h2>Resultados</h2>
+            <div id="resultados"></div>
+        </div>
+    </div>
+
+    <div id="arbolNavegacion" class="arbol-navegacion">
+        <h3>Árbol de Navegación</h3>
+        <div id="contenidoArbol"></div>
+    </div>
+
+    <div id="reproductorActual" class="reproductor-actual">
+    </div>
+
+    <script src="clases/ComponenteMusical.js"></script>
+    <script src="clases/Cancion.js"></script>
+    <script src="clases/Album.js"></script>
+    <script src="clases/ListaReproduccion.js"></script>
+    
+
+    <script src="clases/Artista.js"></script>
+    <script src="clases/DecoradorFiltro.js"></script>
+    <script src="clases/FiltroGenero.js"></script>
+    <script src="clases/FiltroIdioma.js"></script>
+    <script src="clases/FiltroDecada.js"></script>
+    <script src="clases/FiltroArtistaSeleccionado.js"></script>
+    
+
+    <script src="clases/GestorDatos.js"></script>
+    <script src="clases/GestorFiltros.js"></script>
+    <script src="clases/GestorNavegacion.js"></script>
+    <script src="clases/GestorInterfaz.js"></script>
+    
+
+    <script src="programa.js"></script>
+</body>
+</html>
